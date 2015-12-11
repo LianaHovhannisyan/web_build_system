@@ -48,3 +48,9 @@ task testwebApp(type: GruntTask) {
     gruntArgs = "test"
 }
 
+// Gradle task to clean build
+task clean(type: GruntTask) {
+    group = "Clean"
+    description = "Clean previous builds."
+    gruntArgs = "clean"
+}
