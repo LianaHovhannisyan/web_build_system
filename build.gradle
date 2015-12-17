@@ -5,12 +5,12 @@ import org.apache.tools.ant.taskdefs.condition.Os
 
 // Gradle task to install all Node.js dependencies defined in package.json.
 task npm(type: Exec) {
-//   group = "Build"
-//   description = "Installs all Node.js dependencies defined in package.json"
-//   commandLine = ["npm", "install"]
-//   inputs.file "package.json"
-//   outputs.dir "node_modules"
-//}
+   group = "Build"
+   description = "Installs all Node.js dependencies defined in package.json"
+   commandLine = ["npm", "install"]
+   inputs.file "package.json"
+   outputs.dir "node_modules"
+}
 
 // Gradle GruntTask class
 class GruntTask extends Exec {
